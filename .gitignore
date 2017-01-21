@@ -3,4 +3,4 @@ node_modules
 bundle.js
 bundle.js.map
 APIkey.js
-config.js
+config.json
