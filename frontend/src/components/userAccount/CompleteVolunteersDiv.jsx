@@ -1,7 +1,7 @@
 import React from 'react';
 
 // components
-import IndividualComplete from 'IndividualComplete';
+import IndividualComplete from './IndividualComplete';
 
 const CompleteVolunteersDiv = React.createClass({
   render: function() {
@@ -11,4 +11,4 @@ const CompleteVolunteersDiv = React.createClass({
   }
 })
 
-export default CompleteVolunteersDiv
+export default CompleteVolunteersDiv;

@@ -26,7 +26,7 @@ const Userform = React.createClass({
 
   handleClick(key, event){
     let final = event.target.value
-    
+
     this.setState({
       [key]: final
     })
@@ -37,51 +37,48 @@ const Userform = React.createClass({
 
   render(){
     return(
-      
-        <div style = {{display: 'flex', justifyContent: 'center'}}>
+
+        <div className="userForm">
           <div>
             <form>
-              <div>
-                <div>
-                  <input onChange = {this.handleChange.bind(this, "name")}placeholder = "name" type = 'text' />
+              <div className="insideForm">
+                <div className="inputDiv">
+                  <h1 className="inputDivH1">Find a volunteer location</h1>
+                  <div>
+                    <input onChange = {this.handleChange.bind(this, "name")} placeholder="name" type='text' />
+                  </div>
+                  <div>
+                    <input onChange = {this.handleChange.bind(this, "zip")} placeholder="zipcode" type='text' />
+                  </div>
                 </div>
+                <p className="interests">Interest(s)</p>
+                <div className="checkBoxes">
+                  <div>
+                    <label htmlFor="Education">Education</label>
+                    <input onClick = {this.handleClick.bind(this,"education")} type="checkbox" value="Education"/>
+                  </div>
+                  <div>
+                    <label htmlFor="Health">Health</label>
+                    <input onClick = {this.handleClick.bind(this,"health")} type="checkbox" value="Health"/>
+                  </div>
 
-                <div>
-                  <input onChange = {this.handleChange.bind(this, "zip")}placeholder = "zip"type = 'text' />
-                </div> 
-
-                <div>
-                  <input onChange = {this.handleChange.bind(this,"interest")}placeholder = "interest"  type = 'text' />
+                  <div>
+                    <label htmlFor="Transit">Transit</label>
+                    <input onClick = {this.handleClick.bind(this,"transit")} type="checkbox" value="Transit"/>
+                  </div>
+                  {/* <div>
+                    <input onClick = {this.handleClick.bind(this,"housing")} type="checkbox" name="vehicle" value="  Housing"/> Housing
+                  </div> */}
+                  <div>
+                    <label htmlFor="Food">Food</label>
+                    <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" value="Food"/>
+                  </div>
                 </div>
-
-                <div>
-                  <input onClick = {this.handleClick.bind(this,"education")} type="checkbox" name="vehicle" value=" Education "/>Education
-           
-                </div> 
-
-                <div>
-                  <input onClick = {this.handleClick.bind(this,"health")} type="checkbox" name="vehicle" value=" Health "/> Health
-                </div>
-           
-                <div>
-                  <input onClick = {this.handleClick.bind(this,"transit")} type="checkbox" name="vehicle" value=" Transit "/> Transit
-                </div> 
-
-                <div>
-                  <input onClick = {this.handleClick.bind(this,"housing")} type="checkbox" name="vehicle" value="  Housing"/> Housing
-           
-                </div> 
-
-                <div>
-                  <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" name="vehicle" value=" Food "/> Food
-                </div>
-           
-                
-                <input placeholder = ""type = "submit" />
+                <input className="formButton" type="submit" />
               </div>
             </form>
           </div>
-         
+
         </div>
 
     )
