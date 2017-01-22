@@ -5,8 +5,8 @@ module.exports = function(sequelize, DataTypes) {
   var Company = sequelize.define('Company', {
     name: DataTypes.STRING,
     address: DataTypes.STRING,
-    longitude: DataTypes.INTEGER,
-    latitude: DataTypes.INTEGER
+    longitude: DataTypes.STRING,
+    latitude: DataTypes.STRING
   }, {
     classMethods: {
       associate: function(models) {

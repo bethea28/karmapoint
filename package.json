@@ -33,5 +33,13 @@
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
     "mocha": "^2.4.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jung8027/karmapoint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jung8027/karmapoint/issues"
+  },
+  "homepage": "https://github.com/jung8027/karmapoint#readme"
 }
