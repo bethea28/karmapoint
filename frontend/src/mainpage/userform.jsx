@@ -2,7 +2,6 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import {Link} from 'react-router'
 
-
 const Userform = React.createClass({
   getInitilState(){
     return {
@@ -31,25 +30,19 @@ const Userform = React.createClass({
     this.setState({
       [key]: final
     })
-
     console.log(this.state)
   },
-
-
   render(){
     return(
-
         <div className="userForm">
-
-
           <div>
             <form>
               <div className="insideForm">
                 <div className="inputDiv">
                   <h1 className="inputDivH1">Find a volunteer location</h1>
-                  <div>
+                  {/* <div>
                     <input onChange = {this.handleChange.bind(this, "name")} placeholder="name" type='text' />
-                  </div>
+                  </div> */}
                   <div>
                     <input onChange = {this.handleChange.bind(this, "zip")} placeholder="zipcode" type='text' />
                   </div>
@@ -77,15 +70,15 @@ const Userform = React.createClass({
                     <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" value="Food"/>
                   </div>
                 </div>
+
               
 
                  <Link to = '/result' ><input className="formButton" type="submit" /> </Link>
+               
+
               </div>
             </form>
-
-            
           </div>
-
         </div>
 
     )

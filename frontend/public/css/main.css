@@ -21,19 +21,6 @@ nav {
   flex-direction: column;
 }
 
-.messagepage{
-  display: none;
-  padding-left: 50px;
-  width: auto;
-  height: auto;
-  border: 1px solid black;
-}
-
-.messagepage textarea{
-  height: 75px;
-  width: 300px;
-}
-
 /*video {
   position: absolute;
   top: 50%;

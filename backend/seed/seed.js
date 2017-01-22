@@ -11,10 +11,10 @@ let users = [
 ]
 
 let comments = [
-  {UserId:1, CompanyId:1, comments: 'Bryan is an exceptional worker, who strives to be the very best that no one ever was.', date: 2016-12-06, task: 'designated food caterer'},
-  {UserId:2, CompanyId:1, comments: 'Carlos has exceptional communication skills with customers of diverse backgrounds', date: 2016-10-06, task: 'food transporter'},
-  {UserId:3, CompanyId:2, comments: 'Jon is exceptionally helpful and dedicated to our cause', date: 2016-07-15, task: 'food server'},
-  {UserId:4, CompanyId:3, comments: 'Jung is a hard worker and is dedicated to our cause', date: 2015-12-12, task:'storage operations'}
+  {UserId:1, CompanyId:1, comments: 'Bryan is an exceptional worker, who strives to be the very best that no one ever was.', date: 2016-12-06, task: 'designated food caterer', hours: 8},
+  {UserId:2, CompanyId:1, comments: 'Carlos has exceptional communication skills with customers of diverse backgrounds', date: 2016-10-06, task: 'food transporter', hours: 6},
+  {UserId:3, CompanyId:2, comments: 'Jon is exceptionally helpful and dedicated to our cause', date: 2016-07-15, task: 'food server', hours: 2},
+  {UserId:4, CompanyId:3, comments: 'Jung is a hard worker and is dedicated to our cause', date: 2015-12-12, task:'storage operations', hours: 5}
 ]
 
 let company = [
