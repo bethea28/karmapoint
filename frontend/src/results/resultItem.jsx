@@ -51,11 +51,15 @@ const ResultItem = React.createClass({
     console.log(this.state)
     return(
       
+          // program_numeric_id
         <div>
           <div>
-          
-              {this.state.programs ? <h1> <Link>{this.state.programs[0].name} </Link></h1>:
-               <h1> Loading </h1>}
+              {this.state.programs ?  this.state.programs.map((a,b)=>{
+                
+                  return <h4 key = {b}> <Link to = {'/program/' + a.program_numeric_id}>{a.name} </Link> </h4> 
+
+              }): <h1> Loading </h1>}
+
           </div>
         </div>
 

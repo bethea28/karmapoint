@@ -12,15 +12,15 @@ const ProgramInfo = React.createClass({
 	},
 	componentDidMount(){
 		//can do search with program_numeric_id as params
-		let zipcode = 10001
-		let program_id = this.params.programId
-		$.ajax({
-		url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+program_id+'?api_key='+APIkey+
-		})
-		.done((info)=>this.setState({prgramInfo:info}))
-		// this.setState({
-		// 	programInfo: singleProgram.programs[0]
+		// let zipcode = 10001
+		// let program_id = this.params.programId
+		// $.ajax({
+		// url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+program_id+'?api_key='+APIkey
 		// })
+		// .done((info)=>this.setState({prgramInfo:info}))
+		this.setState({
+			programInfo: singleProgram.programs[0]
+		})
 	},
 	showDiv(){
 			$('.messagepage').css({
