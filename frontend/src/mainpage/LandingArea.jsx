@@ -12,7 +12,7 @@ const LandingArea = React.createClass({
           </source>
         </video> */}
         <div>
-          <h1><span>Karma</span>Point</h1>
+          <h1><img src="http://i.imgur.com/MJ3qUKy.png" style={{width:80, height:"auto"}}/><span>Karma</span>Point</h1>
           <p>Keep your past, Build your future.</p>
           <div className="H3Div">
             <h3 className="landingH3">Find oppurtunities to volunteer</h3>

@@ -20,7 +20,7 @@ export default class MapContainer extends Component{
           lng:org.longitude
         }
       }
-      return <Marker icon={'http://i.imgur.com/TJUrIRQ.png'} key={i} {...marker} />
+      return <Marker icon={'http://i.imgur.com/GctT1pO.png'} key={i} {...marker} />
 
     })
       return (
