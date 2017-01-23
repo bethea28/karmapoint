@@ -29,7 +29,7 @@ const ProgramInfo = React.createClass({
 				'transition':'3s',
 			})
 			$('.programInfoDiv').css({
-				'margin-bottom': '25px'
+				'margin-bottom': '160px'
 			})
 	},
 	alert(){
