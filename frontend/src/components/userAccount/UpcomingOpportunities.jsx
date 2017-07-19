@@ -3,8 +3,8 @@ import React from 'react';
 // components
 // import IndividualPending from './IndividualPending';
 
-const UpcomingOpps = React.createClass({
-  render: function() {
+const UpcomingOpps = (props) => {
+ 
     return (
       <div className="upcomingCont">
         <div className="individualOpps">
@@ -51,7 +51,7 @@ const UpcomingOpps = React.createClass({
         </div>
       </div>
     )
-  }
-})
+
+}
 
 export default UpcomingOpps;

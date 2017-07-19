@@ -5,8 +5,8 @@ import MapContainer from './maps/mapContainer';
 import Map from './maps/map';
 import Navbar from '../components/Navbar';
 
-const Mainresult = React.createClass({
-  render(){
+const Mainresult = (props) => {
+  
     return(
         <div className="mainResultDiv" style = {{display: "flex",flexDirection: "column", justifyContent: "center"}}>
           <Navbar />
@@ -17,7 +17,7 @@ const Mainresult = React.createClass({
         	<ResultItem />
         	</div>
     )
-  }
-})
+  
+}
 
 export default Mainresult

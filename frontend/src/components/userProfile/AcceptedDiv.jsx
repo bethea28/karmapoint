@@ -3,12 +3,12 @@ import React from 'react';
 // components
 import IndividualAccepted from "./AcceptedDiv";
 
-const AcceptedDiv = React.createClass({
-  render: function() {
+const AcceptedDiv = (props) => {
+  
     return (
       <IndividualAccepted />
     )
-  }
-})
+
+}
 
 export default AcceptedDiv;

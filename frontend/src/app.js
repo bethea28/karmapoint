@@ -15,16 +15,16 @@ import UserPage from './components/userProfile/UserPage';
 import '../public/css/main.css';
 import '../public/css/programinfo.css'
 
-const App = React.createClass({
-	render(){
+const App = (props) => {
+
 		return(
 	      <div className="mainPage">
 				{this.props.children}
 				<Footer />
 				</div>
 		)
-	}
-});
+	
+};
 
 ReactDOM.render(
 	<Router history={browserHistory}>

@@ -1,18 +1,21 @@
 import ReactDOM from 'react-dom';
-import React from 'react';
+import React, {Component} from 'react';
 import $ from 'jquery'
 import {Link} from 'react-router'
 var Bertha = require('../../../backend/seed/exAPI')
 
 
 
-const ResultItem = React.createClass({
-  getInitialState(){
-    return{
+class ResultItem extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
       programs: null,
       numericId: null
+      
     }
-  },
+  }
+
   componentDidMount(event){
 
     $.ajax({
@@ -24,7 +27,8 @@ const ResultItem = React.createClass({
         let final = data.programs
         this.setState({programs: final})
     })
-  },
+  }
+  
   render(){
     return(
         <div>
@@ -38,6 +42,6 @@ const ResultItem = React.createClass({
         </div>
     )
   }
-})
+}
 
 export default ResultItem

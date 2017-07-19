@@ -5,8 +5,8 @@ import AcceptedDiv from "./AcceptedDiv";
 import CompleteVolunteersDiv from '../userAccount/CompleteVolunteersDiv';
 import Navbar from '../Navbar';
 
-const UserPage = React.createClass({
-  render: function() {
+const UserPage = (props) => {
+
     return (
       <div>
         <Navbar />
@@ -24,7 +24,7 @@ const UserPage = React.createClass({
         <p>view more</p>
       </div>
     )
-  }
-})
+
+}
 
 export default UserPage;

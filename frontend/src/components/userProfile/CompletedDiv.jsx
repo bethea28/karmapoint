@@ -3,12 +3,12 @@ import React from 'react';
 // components
 import IndividualCompleted from "./AcceptedDiv";
 
-const CompletedDiv = React.createClass({
-  render: function() {
+const CompletedDiv = (props) => {
+
     return (
       <IndividualCompleted />
     )
-  }
-})
+
+}
 
 export default CompletedDiv;

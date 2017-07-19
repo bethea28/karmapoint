@@ -6,8 +6,8 @@ import CompleteVolunteersDiv from './CompleteVolunteersDiv';
 import Navbar from '../Navbar';
 import UpcomingOpps from './UpcomingOpportunities';
 
-const UserAccountPage = React.createClass({
-  render: function(){
+const UserAccountPage = (props) => {
+  
     return (
       <div>
         <Navbar />
@@ -21,8 +21,8 @@ const UserAccountPage = React.createClass({
         </div>
       </div>
     )
-  }
-})
+
+}
 
 
 export default UserAccountPage;

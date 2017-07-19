@@ -1,11 +1,9 @@
 import React from 'react';
 
-const IndividualAccepted = React.createClass({
-  render: function() {
+const IndividualAccepted = (props) => {
     return (
       <div>This is the Individual accepted component</div>
     )
-  }
-})
+}
 
 export default IndividualAccepted;

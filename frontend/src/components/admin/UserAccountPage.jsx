@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 
 // components
 import PendingDiv from './PendingDiv';
@@ -6,8 +6,11 @@ import CompleteVolunteersDiv from './CompleteVolunteersDiv';
 import Navbar from '../Navbar';
 
 
-const UserAccountPage = React.createClass({
-  render: function(){
+class UserAccountPage extends Component {
+  constructor(props){
+    super(props)
+  }
+  render(){
     return (
       <div>
         <Navbar />
@@ -18,7 +21,7 @@ const UserAccountPage = React.createClass({
       </div>
     )
   }
-})
+}
 
 
 export default UserAccountPage;
