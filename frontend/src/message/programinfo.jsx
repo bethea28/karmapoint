@@ -1,7 +1,7 @@
-var React = require('react');
+const React = require('react');
 import {Link} from 'react-router'
-var APIkey = require('../../../APIkey');
-var singleProgram = require('../../../backend/seed/exAPI.js');
+// const APIkey = require('../../../APIkey');
+const singleProgram = require('../../../backend/seed/exAPI.js');
 import $ from 'jquery';
 import Navbar from '../components/Navbar';
 
@@ -16,7 +16,7 @@ const ProgramInfo = React.createClass({
 		let zipcode = 10001;
 		let programId = this.props.params.programId;
 		$.ajax({
-		url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+programId+'?api_key='+APIkey.APIkey,
+		url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+programId+'?api_key='+ " b0f6c6a6a8be355fc04be76ab3f0c5e6",
 		type: 'GET'
 		})
 		.done((info)=>{

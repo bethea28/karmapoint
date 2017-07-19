@@ -1,5 +1,5 @@
 const app = require('./backend/server');
-const sequelizeConnection = require('./server/db/models').sequelize;
+const sequelizeConnection = require('./backend/models').sequelize;
 
 sequelizeConnection
 .authenticate()
