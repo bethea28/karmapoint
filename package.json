@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch & nodemon ./backend/server.js"
+    // "start": "webpack --watch & nodemon ./backend/server.js"
+    "start": "concurrently -k 'node_modules/.bin/nodemon start.js' 'node_modules/.bin/webpack  --watch --config ./webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,10 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0"
   },
+   "engines": {
+  "node": "7.4.0"
+  },
+
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
