@@ -19,7 +19,7 @@ const App = (props) => {
 
 		return(
 	      <div className="mainPage">
-				{this.props.children}
+				{props.children}
 				<Footer />
 				</div>
 		)
