@@ -76,7 +76,9 @@ class Userform extends Component {
                     <input onClick = {(event)=>{this.handleClick(event)}} type="checkbox" value="food"/>
                   </div>
                 </div>
-               <Link to = '/result' ><input className="formButton" type="submit"/></Link>
+                  <Link to = '/result' > 
+                    <input className="formButton" type="submit"/>
+                  </Link>
               </div>
 
             </form>

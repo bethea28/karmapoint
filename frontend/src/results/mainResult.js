@@ -15,7 +15,7 @@ const Mainresult = (props) => {
           {/* <br /> */}
           <ResultItem />
         	   <MapContainer />
-        	</div>
+        </div>
     )
   
 }
