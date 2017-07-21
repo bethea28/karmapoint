@@ -21,6 +21,7 @@ class ProgramInfo extends Component {
 		//can do search with program_numeric_id as params
 		let zipcode = 10001;
 		let programId = this.props.params.programId;
+		console.log(programId)
 		$.ajax({
 		url: 'https://c4q-dot-searchbertha-hrd.appspot.com/_ah/api/search/v1/zipcodes/'+zipcode+'/programs/'+programId+'?api_key='+ " b0f6c6a6a8be355fc04be76ab3f0c5e6",
 		type: 'GET'

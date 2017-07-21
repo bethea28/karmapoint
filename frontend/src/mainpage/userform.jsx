@@ -31,11 +31,12 @@ class Userform extends Component {
 
   handleClick(key, event){
     let final = event.target.value
+    console.log(final)
 
     this.setState({
       [key]: final
     })
-    console.log(this.state)
+    console.log(this.state.food)
   }
   render(){
     return(
@@ -72,7 +73,7 @@ class Userform extends Component {
                   </div> */}
                   <div>
                     <label htmlFor="Food">Food</label>
-                    <input onClick = {this.handleClick.bind(this, "food")} type="checkbox" value="Food"/>
+                    <input onClick = {()=>{this.handleClick("food")}} type="checkbox" value="Food"/>
                   </div>
                 </div>
                <Link to = '/result' ><input className="formButton" type="submit"/></Link>

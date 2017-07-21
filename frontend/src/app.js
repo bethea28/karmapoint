@@ -1,7 +1,7 @@
 // import {withRouter, Router, Route, Link, browserHistory} from 'react-router';
 import ReactDOM from 'react-dom';
 import React from 'react';
-import {Router, Route, browserHistory, Link,IndexRoute} from 'react-router';
+import {Router, Route, browserHistory, Link, IndexRoute} from 'react-router';
 
 // Components
 import Mainpage from './mainpage/mainpage';
@@ -17,12 +17,13 @@ import '../public/css/programinfo.css'
 
 const App = (props) => {
 
-		return(
-	      <div className="mainPage">
-				{props.children}
-				<Footer />
-				</div>
-		)
+	return(
+
+    <div className="mainPage">
+		{props.children}
+		<Footer />
+		</div>
+	)
 	
 };
 

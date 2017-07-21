@@ -10,6 +10,7 @@ const getAllUsers = (req,res) => {
 };
 
 const postNewUser = (req,res)=>{
+  console.log("made it")
   User.create({
     name: req.body.name,
     zipcode: req.body.zipcode,
