@@ -29,14 +29,14 @@ class Userform extends Component {
     console.log(this.state)
   }
 
-  handleClick(key, event){
-    let final = event.target.value
-    console.log(final)
+  handleClick(event){
+    // let final = key
+    // console.log(key)
 
     this.setState({
-      [key]: final
+      [event.target.value]: event.target.value
     })
-    console.log(this.state.food)
+    console.log(event.target.value)
   }
   render(){
     return(
@@ -57,23 +57,23 @@ class Userform extends Component {
                 <div className="checkBoxes">
                   <div>
                     <label htmlFor="Education">Education</label>
-                    <input onClick = {this.handleClick.bind(this,"education")} type="checkbox" value="Education"/>
+                    <input onClick = {(event)=>{this.handleClick(event)}} type="checkbox" value="education"/>
                   </div>
                   <div>
                     <label htmlFor="Health">Health</label>
-                    <input onClick = {this.handleClick.bind(this,"health")} type="checkbox" value="Health"/>
+                    <input onClick = {(event)=>{this.handleClick(event)}} type="checkbox" value="health"/>
                   </div>
 
                   <div>
                     <label htmlFor="Transit">Transit</label>
-                    <input onClick = {this.handleClick.bind(this,"transit")} type="checkbox" value="Transit"/>
+                    <input onClick = {(event)=>{this.handleClick(event)}} type="checkbox" value="transit"/>
                   </div>
                   {/* <div>
                     <input onClick = {this.handleClick.bind(this,"housing")} type="checkbox" name="vehicle" value="  Housing"/> Housing
                   </div> */}
                   <div>
                     <label htmlFor="Food">Food</label>
-                    <input onClick = {()=>{this.handleClick("food")}} type="checkbox" value="Food"/>
+                    <input onClick = {(event)=>{this.handleClick(event)}} type="checkbox" value="food"/>
                   </div>
                 </div>
                <Link to = '/result' ><input className="formButton" type="submit"/></Link>
