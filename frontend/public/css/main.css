@@ -112,32 +112,42 @@ nav ul li {
 
 .landingArea {
   display: flex;
-  height: 92vh;
+  /*height: 92vh;*/
   /*background-color: #196cfc;*/
+  width: 100vw;
+  /*margin-left: 7%;*/
   display: flex;
   justify-content: space-around;
   background-color: #196cfc;
   background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
 }
 
+.landingFocus {
+  width: 50%;
+}
+
 .landingArea h1 {
-  font-size: 5em;
+  font-size: 4em;
   color: white;
+  position: relative;
+  left: -34px;
+
 }
 
 .H3Div {
-  margin-top: 200px;
+  margin-top: 175px;
   position: relative;
   height: 50px;
+  left: 10px;
 }
 
 .landingH3 {
   position: relative;
   color: gold;
   margin-left: 50px;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
-  top: -320% ;
+  top: -280% ;
 }
 
 .landingArea h1 span {
@@ -146,9 +156,11 @@ nav ul li {
 }
 
 .landingArea p {
-  font-size: 2em;
+  font-size: 1.9em;
   color: white;
   margin-left: 50px;
+  position: absolute;
+  top: 150px;
 }
 
 .landingForm {
@@ -166,6 +178,9 @@ nav ul li {
   color: white;
   font-size: 1.5em;
   font-weight: 300;
+  position: absolute;
+  top: 120px;
+  right: 23%;
 }
 
 form {
@@ -206,8 +221,10 @@ form {
   border: 1px solid #efefef;
 }
 
-.insideForm .interests {
+.interests {
   margin-left: 0;
+  position: absolute;
+
 }
 
 .checkBoxes {
@@ -215,6 +232,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 90px;
 }
 
 .checkBoxes div {

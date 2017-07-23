@@ -7,14 +7,17 @@ import Navbar from '../components/Navbar';
 
 const Mainresult = (props) => {
   
+        // <div className="mainResultDiv" style = {{display: "flex",flexDirection: "column", justifyContent: "center"}}>
+          // <div className="gMaps">
+          // </div>
     return(
-        <div className="mainResultDiv" style = {{display: "flex",flexDirection: "column", justifyContent: "center"}}>
-          <Navbar />
-          <div className="gMaps">
-          </div>
+        <div className="mainResultDiv" style = {{display: "flex",flexDirection: "column", justifyContent: "center"}}>  
           {/* <br /> */}
+          <Navbar />
+          <center>
+           <MapContainer />
+          </center>
           <ResultItem />
-        	<MapContainer />
         </div>
     )
   

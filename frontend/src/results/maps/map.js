@@ -4,7 +4,7 @@ import {APIcall} from '../../../../backend/seed/exAPI.js'
 
 export default class MapContainer extends Component{
   render() {
-    const mapContainer = <div style={{height:'100%', width: '100%'}}></div>
+    const mapContainer = <div style={{position: 'absolute', top: 75, height:'75%', width: '75%'}}></div>
 
     const arr=[]
     APIcall.programs.map((a)=>{return a.offices.map((b)=>{

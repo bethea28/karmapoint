@@ -11,7 +11,7 @@ const LandingArea = (props) => {
         <source src="" type="video/mp4">
         </source>
       </video> */}
-      <div>
+      <div className = 'landingFocus'>
         <div className="headerWL">
           <img src="http://i.imgur.com/MJ3qUKy.png" style={{width:80, height:"auto"}}/>
           <h1><span>Karma</span>Point</h1>
@@ -20,7 +20,7 @@ const LandingArea = (props) => {
         <div className="H3Div">
           <h3 className="landingH3">Find oppurtunities to volunteer</h3>
           <h3 className="landingH3">Keep a record and earn points as you go</h3>
-          <h3 className="landingH3">Share your public profile with potential oppurtunities</h3>
+          <h3 className="landingH3">Share your public profile with potential opportunities</h3>
         </div>
       </div>
       <div className="landingForm">

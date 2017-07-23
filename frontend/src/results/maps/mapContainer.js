@@ -29,7 +29,7 @@ const MapContainer = React.createClass ({
       }
     ]
   return(
-    <div style={{width: 800, height: 400, background:'red'}}>
+    <div className = 'mappy'style={{position: "relative", width: 400, height: 400}}>
       <Map center={ location } markers={markers}/>
     </div>
     )

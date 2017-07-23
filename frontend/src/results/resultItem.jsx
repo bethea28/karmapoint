@@ -19,7 +19,7 @@ class ResultItem extends Component {
   componentDidMount(event){
 
     $.ajax({
-      url:'https://data.cityofnewyork.us/resource/cw3p-q2v6.json',
+      url:'https://data.cityofnewyork.us/resource/cw3p-q2v6.json?$limit=10',
       type: "GET",
 
     })
@@ -32,10 +32,10 @@ class ResultItem extends Component {
   
   render(){
     return(
-        <div>
-          <div style ={{ backgroundColor: '#FFD700', display: "flex", flexWrap: "wrap", marginBottom: 130, justifyContent: 'center'}}>
+        <div style = {{position: "relative" }}>
+          <div style ={{ backgroundColor: '#FFD700', display: "flex", flexWrap: "wrap", marginBottom: 0, justifyContent: 'center'}}>
             {this.state.programs ? this.state.programs.map(function(ele, key){
-              return <h5 style = {{display:"flex", justifyContent: 'center', alignItems: 'center', width:250,height: 50, backgroundColor: "#196cfc", borderRadius: 5, marginLeft:  10, marginRight: 10, color: 'white'}} key = {key}> <Link style = {{ color: 'white', textDecoration: 'none'}} to={ '/program/' + ele}> {ele.facilityname}</Link> </h5>
+              return <h5 key = {key}> <Link style = {{ borderRadius: 10, backgroundColor: 'orange', color: 'white', textDecoration: 'none'}} to={ '/program/' + ele}> {ele.facilityname}</Link> </h5>
 
             }): <h5> Loading </h5>
             }
