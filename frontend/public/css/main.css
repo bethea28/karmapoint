@@ -147,7 +147,7 @@ nav ul li {
   margin-left: 50px;
   font-size: 1.5em;
   font-weight: 300;
-  top: -280% ;
+  top: -315% ;
 }
 
 .landingArea h1 span {
@@ -158,9 +158,9 @@ nav ul li {
 .landingArea p {
   font-size: 1.9em;
   color: white;
-  margin-left: 50px;
-  position: absolute;
-  top: 150px;
+  margin-left: 10%;
+  position: relative;
+  top: -6%;
 }
 
 .landingForm {
@@ -176,7 +176,7 @@ nav ul li {
 
 .userForm p {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.9em;
   font-weight: 300;
   position: absolute;
   top: 120px;
