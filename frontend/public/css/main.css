@@ -180,11 +180,11 @@ nav ul li {
   font-weight: 300;
   position: absolute;
   top: 120px;
-  right: 23%;
+  right: 18%;
 }
 
 form {
-  width: 550px;
+  width: 450px;
   display: flex;
   justify-content: center;
 }
@@ -211,6 +211,8 @@ form {
   font-size: 2em;
   font-weight: 300;
   color: white;
+  position: relative;
+  left: 0%;
 }
 
 .inputDiv input{
@@ -231,15 +233,18 @@ form {
   height:100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 90px;
-}
+  position: relative; 
+/*  left: 20%;
+*/}
 
 .checkBoxes div {
-  width: 200px;
+  width: 150px;
   display: flex;
   align-items: center;
   color: white;
+  position: relative;
+  left: 75px;
+  border: solid;
 }
 
 .insideForm .formButton {
@@ -391,8 +396,8 @@ img {
 
 
 .mainResultDiv {
-  display: flex;
-  justify-content: center;
+/*  display: flex;
+  justify-content: center;*/
 }
 
 .gMaps {
@@ -402,12 +407,52 @@ img {
   padding-bottom: 30px;
 }
 
+.eachResult {
+  border-radius: 3%;
+  background-color: orange;
+  color: white;
+  margin: 5px 5px 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  text-decoration: none;
+}
+
+.linkStyle {
+  font-size: 1em;
+  position: relative;
+  top: 12px;
+  text-align: center; 
+  text-decoration: none;
+}
+
+.programResults {
+  top: 120px;
+  /*background-color: yellow; */
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-bottom: 0; 
+  justify-content: center;
+  margin-top: 20px;
+  height: 180px;
+}
+
+.map {
+  /*position: absolute;*/
+  margin: auto;
+  height: 400px; 
+  width: 50%;
+  border-radius: 3%;
+  /*position: relative;*/
+  /*left: 400px;
+  top: 250px;*/
+}
 
 /*---------Footer------------*/
 footer {
      height: 40px;
     background-color: #196cfc;
-    /* display: flex; */
+     display: flex; 
     align-items: center;
     /*position: fixed;*/
     width: 100vw;

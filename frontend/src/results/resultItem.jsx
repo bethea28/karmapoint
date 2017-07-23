@@ -33,9 +33,9 @@ class ResultItem extends Component {
   render(){
     return(
         <div style = {{position: "relative" }}>
-          <div style ={{ backgroundColor: '#FFD700', display: "flex", flexWrap: "wrap", marginBottom: 0, justifyContent: 'center'}}>
+          <div className = 'programResults'>
             {this.state.programs ? this.state.programs.map(function(ele, key){
-              return <h5 key = {key}> <Link style = {{ borderRadius: 10, backgroundColor: 'orange', color: 'white', textDecoration: 'none'}} to={ '/program/' + ele}> {ele.facilityname}</Link> </h5>
+              return <h5 className = 'eachResult' key = {key}> <Link className = 'linkStyle'  to={ '/program/' + ele}> {ele.facilityname}</Link> </h5>
 
             }): <h5> Loading </h5>
             }

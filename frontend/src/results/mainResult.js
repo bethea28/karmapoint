@@ -11,13 +11,13 @@ const Mainresult = (props) => {
           // <div className="gMaps">
           // </div>
     return(
-        <div className="mainResultDiv" style = {{display: "flex",flexDirection: "column", justifyContent: "center"}}>  
+        <div className="mainResultDiv" style = {{display: "flex",flexDirection: "column"}}>  
           {/* <br /> */}
           <Navbar />
-          <center>
+        
            <MapContainer />
-          </center>
-          <ResultItem />
+           <ResultItem />
+         
         </div>
     )
   

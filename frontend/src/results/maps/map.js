@@ -4,7 +4,7 @@ import {APIcall} from '../../../../backend/seed/exAPI.js'
 
 export default class MapContainer extends Component{
   render() {
-    const mapContainer = <div style={{position: 'absolute', top: 75, height:'75%', width: '75%'}}></div>
+    const mapContainer = <div className = 'map' ></div>
 
     const arr=[]
     APIcall.programs.map((a)=>{return a.offices.map((b)=>{
@@ -25,7 +25,7 @@ export default class MapContainer extends Component{
     })
       return (
           <GoogleMapLoader
-            containerElement ={ mapContainer }
+            containerElement = { mapContainer }
                   googleMapElement = {
                       <GoogleMap
                 defaultZoom={13}
@@ -34,7 +34,7 @@ export default class MapContainer extends Component{
               { markers }
             </GoogleMap>
           }
-      />
+          />
            
  
       )
