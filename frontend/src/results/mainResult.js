@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import ResultItem from './resultItem';
-import MapContainer from './maps/mapContainer';
-import Map from './maps/map';
+// import MapContainer from './maps/mapContainer';
+// import Map from './maps/map';
 import Navbar from '../components/Navbar';
 
 const Mainresult = (props) => {
@@ -15,7 +15,7 @@ const Mainresult = (props) => {
           {/* <br /> */}
           <Navbar />
         
-           <MapContainer />
+        
            <ResultItem />
          
         </div>
