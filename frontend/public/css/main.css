@@ -450,7 +450,7 @@ img {
 
 /*---------Footer------------*/
 footer {
-     height: 40px;
+     height: 30px;
     background-color: #196cfc;
      display: flex; 
     align-items: center;
