@@ -15,7 +15,7 @@ const Mainresult = (props) => {
           {/* <br /> */}
           <Navbar />
         
-             <MapContainer />
+          
            <ResultItem />
          
         </div>
